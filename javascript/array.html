@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>arrays in javascript</title>
+	<style type="text/css">
+		#div{width:100px;
+		height:100px;
+		background-color: red}
+	</style>
+</head>
+<body>
+  <p id="myParagraph">Javascript<p>
+	
+
+<script type="text/javascript">
+var shoppingList=["bread","eggs","milk"];
+document.getElementById("myParagraph").innerHTML=shoppingList;
+document.getElementById("myParagraph").innerHTML=shoppingList[1];
+document.getElementById("myParagraph").innerHTML=shoppingList[1]="yoghurt";
+document.getElementById("myParagraph").innerHTML=shoppingList;
+// delete shoppingList[1];
+// console.log(shoppingList);
+
+shoppingList.splice(1,1);
+window.console.log(shoppingList);
+shoppingList.splice(1,0,"banana","apple");
+window.console.log(shoppingList);
+var myString='ABCD';   //split is used to convert the string into array//
+var myArray=myString.split();
+window.console.log(myArray); 
+var myArray=myString.split("");
+window.console.log(myArray); //array of 4 elements
+var myString="what is the weather?";
+var myArray=myString.split(" ");
+window.console.log(myArray);   // array banayega and space se separate krega sabko
+
+
+</script>
+
+</body>
+</html>

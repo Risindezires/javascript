@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+	<style type="text/css">
+		#div{width:100px;
+		height:100px;
+		background-color: red}
+	</style>
+</head>
+<body>
+<div id="div">
+  <p>hi there</p>
+	
+</div>
+<button id="button1">change html style</button>
+<script type="text/javascript">
+  var myPhone={
+  	make:"apple",
+  	model:"iphone4",
+  	color:"white",
+  };
+  window.console.log(myPhone);
+  delete myPhone.color;
+  window.console.log(myPhone);
+  window.console.log(myPhone.model);
+  var myotherphone=myPhone;//if i change something in my other phone same will reflect in my phone//
+window.console.log(myotherphone);
+myotherphone.model="iphone5";
+window.console.log(myotherphone);
+window.console.log(myPhone);
+</script>
+
+</body>
+</html>

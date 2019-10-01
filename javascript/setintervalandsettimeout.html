@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>set time interval and set time out</title>
+</head>
+<body>
+<p id="counter">0</p>
+<button onclick="clearInterval(myCounter)">stop counting</button>
+<script type="text/javascript">
+	var counter=document.getElementById("counter");
+	var x=0;
+	var myCounter=setInterval(function(){
+		x++;
+		counter.innerHTML=x;
+
+	},1000);
+
+</script>
+</body>
+</html>

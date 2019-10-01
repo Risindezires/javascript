@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>object</title>
+	<style type="text/css">
+		#div{width:100px;
+		height:100px;
+		background-color: red}
+	</style>
+</head>
+<body>
+<div id="div">
+  <p>hi there</p>
+	
+</div>
+<button id="button1">creating object using constructor</button>
+<script type="text/javascript">
+ function phone(make,model,warranty,color)
+ {
+  this.make=make;
+  this.model=model;
+  this.warranty=warranty;
+  this.color=color;
+ }
+ var myPhone=new phone("apple","iphone5",12,"white");
+ window.console.log(myPhone);
+ myPhone.condition="like new";//adding new property to myphone
+ window.console.log(myPhone);//yahaan nahi dikhega teko codition propery  but dikh rha h scene kra ab
+ window.console.log(myPhone.condition);//ab dikhega 
+ var myBrothersPhone=new phone("apple","iphone4",6,"black")
+ window.console.log(myBrothersPhone);
+ window.console.log(myBrothersPhone.condition);
+ phone.prototype.condition="new";
+ window.console.log(myBrothersPhone.condition);
+  window.console.log(myPhone.condition);
+
+
+</script>
+
+</body>
+</html>

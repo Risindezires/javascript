@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>swithcase</title>
+</head>
+<body>
+<p>your season new: <input id="myInput">
+   <button onclick="checkSeason()">
+   	submit
+   </button>
+</p>
+<script type="text/javascript">
+	function checkSeason()
+	{
+		var x=document.getElementById("myInput").value;
+		switch(x)
+		{
+			case "summer":
+			window.alert("it is summer time");
+			break;
+			case "winter":
+			window.alert("it is summer time");
+			break;
+			default:("i donot recognise this");
+		}
+	}
+</script>
+
+</body>
+</html>

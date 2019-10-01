@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>errors in js</title>
+</head>
+<body>
+<p id="error"></p>
+<script type="text/javascript">
+	try
+	{
+		sum(3,4);
+	}
+	catch(err)
+	{
+		document.getElementById("error").innerHTML=err.message;
+	}
+</script>
+</body>
+</html>
